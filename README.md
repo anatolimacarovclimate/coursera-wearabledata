@@ -7,7 +7,7 @@ output: html_document
 
 # Project: Human Activity Recognition Using Smartphones Data
 
-The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a [tidy data set](tidy_activity_mean.txt)
+The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a tidy data set [tidy_activity_mean.txt](tidy_activity_mean.txt)
 
 ## Installation
 
@@ -43,13 +43,7 @@ source("run_analysis.R")
 7. Check to see if there were any warning messages about missing files or packages. Troubleshoot if necessary.
 
 8. Once the script has finished you should see a new tidy data file in the folder:
-tidy_activity_mean.txt
-
-TODO: Write usage instructions
-
-## History
-
-TODO: Write history
+[tidy_activity_mean.txt](tidy_activity_mean.txt)
 
 ## Credits
 
