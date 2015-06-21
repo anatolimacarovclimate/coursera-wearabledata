@@ -22,10 +22,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 3. Place the [run_analysis.R](run_analysis.R) file into the folder:
 
-```
-\getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
-
-```
+        ```
+        \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
+        
+        ```
 You should see folders: 'test', 'train' and 
 Text files: README.txt, activity_labels.txt, features.txt, features_info.txt and
 R scripts: [run_analysis.R](run_analysis.R)
@@ -33,14 +33,14 @@ R scripts: [run_analysis.R](run_analysis.R)
 4. Open RStudio and set your working directory to the folder in which the data was downloaded above in the subdirectory \UCI HAR Dataset
 Your setwd command should look something like this on a Winows operating system. Change the folder slashes if you are on a Mac or Linux:
 
-```
-setwd("F:/Courses/Coursera/Getting and Cleaning Data/Week 3/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
-```
+        ```
+        setwd("F:/Courses/Coursera/Getting and Cleaning Data/Week 3/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
+        ```
 
 5. Run the [run_analysis.R](run_analysis.R) script by using the source command as follows:
-```
-source("run_analysis.R")
-```
+        ```
+        source("run_analysis.R")
+        ```
 
 6. Wait for the program to load libraries and files. Two libraries and their dependencies will be loaded automatically, if they have not been installed on your system. The first package is the [reshape2 package](http://cran.r-project.org/web/packages/reshape2/index.html) and the [dplyr](http://cran.r-project.org/web/packages/dplyr) package.
 Processing all files can take up to 30 seconds depending on the speed of your computer. Messages are printed in red as files are loaded or writen to file.
@@ -53,9 +53,9 @@ Processing all files can take up to 30 seconds depending on the speed of your co
 ## Reading Tidy Data
 If you are simply interested in reading the [tidy_activity_mean.txt](tidy_activity_mean.txt) without having to run [run_analysis.R](run_analysis.R) you can load the file with the following command in RStudio:
 
-```{r}
-read.table("tidy_activity_mean.txt", header = TRUE)
-```
+        ```{r}
+        read.table("tidy_activity_mean.txt", header = TRUE)
+        ```
 
 ## Credits
 
