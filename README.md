@@ -22,10 +22,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 3. Place the [run_analysis.R](run_analysis.R) file into the folder:
 
-        ```
+                ```
                 \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
-        
-        ```
+                
+                ```
 You should see folders: 'test', 'train' and 
 Text files: README.txt, activity_labels.txt, features.txt, features_info.txt and
 R scripts: [run_analysis.R](run_analysis.R)
