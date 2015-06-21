@@ -9,7 +9,7 @@ output: html_document
 
 Project: Human Activity Recognition Using Smartphones Data
 
-The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a tidy data set [tidy_activity_mean.txt](tidy_activity_mean.txt)
+The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a tidy data set [tidy_activity_mean.txt](tidy_activity_mean.txt)
 
 You can read more about the data and the analysis in the markdown file [codebook.md](codebook.md).
 
@@ -42,7 +42,7 @@ setwd("F:/Courses/Coursera/Getting and Cleaning Data/Week 3/getdata-projectfiles
 source("run_analysis.R")
 ```
 
-6. Wait for the program to load libraries and files. Two libraries and their dependencies will be loaded automatically, if they have not been installed on your system. THe first package is the [reshape2 package](http://cran.r-project.org/web/packages/reshape2/index.html) and the [dplyr](http://cran.r-project.org/web/packages/dplyr) package.
+6. Wait for the program to load libraries and files. Two libraries and their dependencies will be loaded automatically, if they have not been installed on your system. The first package is the [reshape2 package](http://cran.r-project.org/web/packages/reshape2/index.html) and the [dplyr](http://cran.r-project.org/web/packages/dplyr) package.
 Processing all files can take up to 30 seconds depending on the speed of your computer. Messages are printed in red as files are loaded or writen to file.
 
 7. Check to see if there were any warning messages about missing files or packages. Troubleshoot if necessary.
@@ -50,7 +50,16 @@ Processing all files can take up to 30 seconds depending on the speed of your co
 8. Once the script has finished you should see a new tidy data file in the folder:
 [tidy_activity_mean.txt](tidy_activity_mean.txt)
 
+## Reading Tidy Data
+If you are simply interested in reading the [tidy_activity_mean.txt](tidy_activity_mean.txt) without having to run [run_analysis.R](run_analysis.R) you can load the file with the following command in RStudio:
+
+```{r}
+read.table("tidy_activity_mean.txt", header = TRUE)
+```
+
 ## Credits
+
+[Hadley Wickham's Tidy Data paper](http://vita.had.co.nz/papers/tidy-data.pdf)
 
 Zeno Rocha's template for Github READMEs (Markdown) + Sublime Snippet
 https://gist.github.com/zenorocha/4526327
