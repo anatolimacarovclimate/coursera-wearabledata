@@ -5,7 +5,9 @@ date: "Sunday, June 21, 2015"
 output: html_document
 ---
 
-# Project: Human Activity Recognition Using Smartphones Data
+# README
+
+Project: Human Activity Recognition Using Smartphones Data
 
 The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a tidy data set [tidy_activity_mean.txt](tidy_activity_mean.txt)
 
