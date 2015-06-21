@@ -11,6 +11,8 @@ Project: Human Activity Recognition Using Smartphones Data
 
 The project for the course [Getting and Cleaning Data](https://www.coursera.org/course/getdata) was to read in the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and write a program [run_analysis.R](run_analysis.R) to perform a transformation of the multiple data sets and output a tidy data set [tidy_activity_mean.txt](tidy_activity_mean.txt)
 
+You can read more about the data and the analysis in the markdown file [codebook.md](codebook.md).
+
 ## Installation
 
 1. Download the data from the following link
@@ -18,7 +20,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 2. Unzip the file Dataset.zip file
 
-3. Place the run_analysis.R file into the folder:
+3. Place the [run_analysis.R](run_analysis.R) file into the folder:
 
 ```
 \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
@@ -35,12 +37,13 @@ Your setwd command should look something like this on a Winows operating system.
 setwd("F:/Courses/Coursera/Getting and Cleaning Data/Week 3/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
 ```
 
-5. Run the run_analysis.R script by using the source command as follows:
+5. Run the [run_analysis.R](run_analysis.R) script by using the source command as follows:
 ```
 source("run_analysis.R")
 ```
 
-6. Wait for the program to load libraries, and files. This can take up to 30 seconds depending on the speed of your computer. Messages are printed in red as files are loaded or writen to file.
+6. Wait for the program to load libraries and files. Two libraries and their dependencies will be loaded automatically, if they have not been installed on your system. THe first package is the [reshape2 package](http://cran.r-project.org/web/packages/reshape2/index.html) and the [dplyr](http://cran.r-project.org/web/packages/dplyr) package.
+Processing all files can take up to 30 seconds depending on the speed of your computer. Messages are printed in red as files are loaded or writen to file.
 
 7. Check to see if there were any warning messages about missing files or packages. Troubleshoot if necessary.
 
