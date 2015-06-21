@@ -42,39 +42,6 @@ For each record it is provided:
 
 Follow the steps in the [README.md](README.md) file for installation instructions.
 
-##Code outline for script [run_analysis.R](run_analysis.R)
-*(0) CHECK FOLDER AND LOAD LIBRARIES
-
-*(1) LOAD FILES
-
-*(2) DESCRIPTIVE COLUMNS LABELS
-
-*(3) SELECT MEAN AND STD COLUMNS
-      Extracts only the measurements on the mean and standard deviation for each measurement
-
-*(4) MERGE FILES
-      Merges the UCI HAR training and test data sets to create one large data set
-
-*(5) DESCRIPTIVE ACTIVITY NAMES
-      Uses descriptive activity names to name the activities in the data set
-
-*(6) CALCULATE THE MEAN FOR EACH ACTIVITY AND SUBJECT
-
-*(7) DESCRIPTIVE VARIABLE NAMES
-      Appropriately labels the data set with descriptive variable names
-
-*(8) GENERATE TIDY OUTPUT FILE
-      Creates a second, independent tidy data set with the average of each variable for each activity and each subject
-
-###Excluded data
-The script [run_analysis.R](run_analysis.R) did not process any data from the raw test signal data in the following folder:
-
-```
-UCI HAR Dataset\test\Inertial Signals 
-```
-
-Thus the data files in the "Inertial Signals" folders were ignored.
-
 ##Description of the variables in the [tidy_activity_mean.txt](tidy_activity_mean.txt) file
 
 A general description of the tidy data frame 'mean.df' follows here with code examples.
@@ -125,7 +92,7 @@ Underscores have been used between some parts of the names to hightlight when fu
 ####Column summary
 A summary of the class of each variable (column) for the tidy data frame are as follows, including some sample data.
 ```{r}
-> str(mean.df)
+str(mean.df)
 ```
 
 ```
@@ -220,9 +187,6 @@ Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':        180 obs. of  89 v
  $ angle_Y_gravityMean_                : num  0.277 0.321 0.262 0.143 0.152 ...
  $ angle_Z_gravityMean_                : num  0.0689 -0.0369 0.1174 -0.0675 0.02 ...
 ```
-
-
-
 
 ##Sources
 To create this [codebook.md](codebook.md) file I used this code book template by [Joris Schut].(https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
