@@ -23,7 +23,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 3. Place the [run_analysis.R](run_analysis.R) file into the folder:
 
         ```
-        \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
+                \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
         
         ```
 You should see folders: 'test', 'train' and 
@@ -54,7 +54,7 @@ Processing all files can take up to 30 seconds depending on the speed of your co
 If you are simply interested in reading the [tidy_activity_mean.txt](tidy_activity_mean.txt) without having to run [run_analysis.R](run_analysis.R) you can load the file with the following command in RStudio:
 
         ```{r}
-        read.table("tidy_activity_mean.txt", header = TRUE)
+                read.table("tidy_activity_mean.txt", header = TRUE)
         ```
 
 ## Credits
