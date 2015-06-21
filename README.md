@@ -22,10 +22,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 3. Place the [run_analysis.R](run_analysis.R) file into the folder:
 
-                ```
-                \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
-                
-                ```
+        ```
+        \getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset
+        ```
 You should see folders: 'test', 'train' and 
 Text files: README.txt, activity_labels.txt, features.txt, features_info.txt and
 R scripts: [run_analysis.R](run_analysis.R)
@@ -38,6 +37,7 @@ Your setwd command should look something like this on a Winows operating system.
         ```
 
 5. Run the [run_analysis.R](run_analysis.R) script by using the source command as follows:
+
         ```
         source("run_analysis.R")
         ```
@@ -53,9 +53,9 @@ Processing all files can take up to 30 seconds depending on the speed of your co
 ## Reading Tidy Data
 If you are simply interested in reading the [tidy_activity_mean.txt](tidy_activity_mean.txt) without having to run [run_analysis.R](run_analysis.R) you can load the file with the following command in RStudio:
 
-        ```{r}
-                read.table("tidy_activity_mean.txt", header = TRUE)
-        ```
+```{r}
+read.table("tidy_activity_mean.txt", header = TRUE)
+```
 
 ## Credits
 

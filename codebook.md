@@ -80,7 +80,8 @@ Thus the data files in the "Inertial Signals" folders were ignored.
 A general description of the tidy data frame 'mean.df' follows here with code examples.
 
 ####Dimensions
-The dimensions of the tidy data frame is 180 rows and 89 columns.
+The dimensions of the tidy data frame is 180 rows and 89 columns. The rows come from 30 subjects x 6 activity types = 180. Besides activity_id, activity_type and subject_id, the columns that were selected are those which have either 'mean' or 'std' in the column names. Originally there were 10299 rows and 561 columns.
+
 ```{r}
 dim(mean.df)
 [1] 180  89
@@ -219,9 +220,12 @@ Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':        180 obs. of  89 v
  $ angle_Y_gravityMean_                : num  0.277 0.321 0.262 0.143 0.152 ...
  $ angle_Z_gravityMean_                : num  0.0689 -0.0369 0.1174 -0.0675 0.02 ...
 ```
- 
+
+
+
+
 ##Sources
-To create this codebook.md file I used this code book template by [Joris Schut].(https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
+To create this [codebook.md](codebook.md) file I used this code book template by [Joris Schut].(https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
  
 ##License:
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
