@@ -95,7 +95,7 @@ A summary of the class of each variable (column) for the tidy data frame are as 
 str(mean.df)
 ```
 
-```
+```{r}
 Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':        180 obs. of  89 variables:
  $ activity_id                         : num  1 1 1 1 1 1 1 1 1 1 ...
  $ activity_type                       : Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
